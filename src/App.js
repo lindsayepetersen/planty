@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
 import Navbar from './Components/Navbar';
+import { Outlet } from 'react-router-dom';
+import Grid from '@mui/material/Grid';
 
 function App() {
   return (
-    <div className="App">
+    <Grid container>
       <Navbar />
-    </div>
+      <Outlet />
+    </Grid>
   );
 }
 

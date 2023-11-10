@@ -1,45 +1,45 @@
-import PeopleIcon from '@mui/icons-material/People';
-import ImageIcon from '@mui/icons-material/Image';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
-import DnsIcon from '@mui/icons-material/Dns';
+import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
+import TaskAltRoundedIcon from '@mui/icons-material/TaskAltRounded';
+import LocalFloristOutlinedIcon from '@mui/icons-material/LocalFloristOutlined';
+import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import ReceiptLongRoundedIcon from '@mui/icons-material/ReceiptLongRounded';
+import BedRoundedIcon from '@mui/icons-material/BedRounded';
 
 export const mainNavbarItems = [
   {
     id: 0,
-    icon: <PeopleIcon />,
-    label: 'Authentication',
-    route: 'authentication',
+    icon: <CottageOutlinedIcon />,
+    label: 'Dashboard',
+    route: 'dashboard',
   },
   {
     id: 1,
-    icon: <DnsIcon />,
-    label: 'Database',
-    route: 'database',
+    icon: <TaskAltRoundedIcon />,
+    label: 'Tasks',
+    route: 'tasks',
   },
   {
     id: 2,
-    icon: <ImageIcon />,
-    label: 'Storage',
-    route: 'storage',
+    icon: <LocalFloristOutlinedIcon />,
+    label: 'My Plants',
+    route: 'my-plants',
   },
   {
     id: 3,
-    icon: <PublicIcon />,
-    label: 'Hosting',
-    route: 'hosting',
+    icon: <Inventory2OutlinedIcon />,
+    label: 'Supplies',
+    route: 'supplies',
   },
   {
     id: 4,
-    icon: <SettingsEthernetIcon />,
-    label: 'Functions',
-    route: 'functions',
+    icon: <ReceiptLongRoundedIcon />,
+    label: 'Wishlist',
+    route: 'wishlist',
   },
   {
     id: 5,
-    icon: <SettingsInputComponentIcon />,
-    label: 'Machine learning',
-    route: 'machine-learning',
+    icon: <BedRoundedIcon />,
+    label: 'Rooms',
+    route: 'rooms',
   },
 ]
