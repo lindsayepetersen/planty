@@ -24,6 +24,10 @@ const Navbar = () => {
   return (
     <Drawer
         sx={{
+          display: { 
+            xs: "none", 
+            sm: "flex", 
+          },
           width: drawerWidth,
           flexShrink: 0,
           '& .MuiDrawer-paper': {

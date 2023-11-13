@@ -14,10 +14,17 @@ const BottomNavbar = () => {
   const [bnValue, setBNValue] = useState(0);
   const navigate = useNavigate();
 
-
   return (
     <BottomNavigation 
-      sx={{ width: '100%', position: 'absolute', bottom: 0 }}
+      sx={{ 
+        width: '100%', 
+        position: 'absolute', 
+        bottom: 0 ,
+        display: { 
+          sm: "none",
+          md: "none" 
+        }
+      }}
       value={bnValue} 
       onChange={(event, value) => setBNValue(value)}
     >
@@ -29,37 +36,37 @@ const BottomNavbar = () => {
       />
       <BottomNavigationAction 
         label='Tasks' 
-        value={bnValue} 
+        value='tasks' 
         onClick={() => navigate('/tasks')}
         icon={<TaskAltOutlinedIcon />}
       />
       <BottomNavigationAction 
         label='Plants' 
-        value={bnValue} 
+        value='my-plants' 
         onClick={() => navigate('/my-plants')}
         icon={<LocalFloristOutlinedIcon />}
       />
       <BottomNavigationAction 
         label='Add' 
-        value={bnValue} 
+        value='add' 
         onClick={() => navigate('/')}
         icon={<AddOutlinedIcon />}
       />
       <BottomNavigationAction 
         label='Supplies' 
-        value={bnValue} 
+        value='supplies' 
         onClick={() => navigate('/supplies')}
         icon={<HomeRepairServiceOutlinedIcon />}
       />
       <BottomNavigationAction 
         label='Wishlist' 
-        value={bnValue} 
+        value='wishlist' 
         onClick={() => navigate('/wishlist')}
         icon={<TextSnippetOutlinedIcon />}
       />
       <BottomNavigationAction 
         label='Rooms' 
-        value={bnValue} 
+        value='rooms' 
         onClick={() => navigate('/rooms')}
         icon={<BedOutlinedIcon />}
       />
